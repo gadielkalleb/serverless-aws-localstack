@@ -30,7 +30,8 @@ O localstack vai disponibilizar um [dashboard](localhost:8080) que lista todos o
   bash scripts/s3/upload-file.sh local-bucket path-do-arquivo
 ```
 
-### Aqui esta o link para outros comandos do [localstack](https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/)
+### Aqui esta o link para outros [comandos do localstack](https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/)
+### O link para o repositorio do [github do plugin serverless localstack](https://github.com/localstack/localstack)
 
 # Testes
 
