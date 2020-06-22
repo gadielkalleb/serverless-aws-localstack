@@ -1,5 +1,5 @@
 
-### Subir o localstack na sua maquina
+# Subir o localstack na sua maquina
 Requisitos necessarios:
   * Docker
 
@@ -15,10 +15,9 @@ depois basta rodar o comando docker-compose:
   docker-compose up -d localstack
 ```
 
-No localhost:8080 vai existir um dash com todos os serviços locais da aws que estiverem disponiveis
-ou os que foram incluidos no docker-compose.yml
+O localstack vai disponibilizar um [dashboard](localhost:8080) que lista todos os serviços da aws que estiverem disponiveis para rodar localmente, ou os que foram incluidos no docker-compose.yml na chave ***services:localstack:environment***
 
-## Comandos Basicos para usar localstack aws
+# Comandos Basicos para usar localstack aws
 
 ### comando para criar 1 bucket local
 ```
