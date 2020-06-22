@@ -1,8 +1,9 @@
 {
-  "name": "e-wallet-service",
+  "name": "aws-localstack",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "createTest": "sls create test -f",
     "test": "npx sls invoke test --path __tests__",
