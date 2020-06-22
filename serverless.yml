@@ -5,8 +5,13 @@ provider:
   runtime: nodejs12.x
 
 plugins:
-  - serverless-offline
+  - serverless-localstack
   - serverless-jest-plugin
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    useChildProcesses: true
 
 functions:
   hello:
