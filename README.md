@@ -31,3 +31,25 @@ O localstack vai disponibilizar um [dashboard](localhost:8080) que lista todos o
 ```
 
 ### Aqui esta o link para outros comandos do [localstack](https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/)
+
+# Testes
+
+Para criar um teste basta criar uma sua função normalmente e fazer referencia no [serverless.yml](./serverless.yml).
+
+exemplo de uma função:
+
+```
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+```
+
+Feito isso basta rodar o comando createTest passando o nome da função:
+
+```
+  npm run createTest hello
+```
