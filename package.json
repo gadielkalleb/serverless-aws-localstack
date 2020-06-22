@@ -1,0 +1,18 @@
+{
+  "name": "e-wallet-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "createTest": "sls create test -f",
+    "test": "npx sls invoke test --path __tests__",
+    "start": "npx nodemon --exec npm run offline",
+    "offline": "npx sls offline start --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "serverless": "^1.73.1",
+    "serverless-jest-plugin": "^0.3.0",
+    "serverless-offline": "^6.4.0"
+  }
+}

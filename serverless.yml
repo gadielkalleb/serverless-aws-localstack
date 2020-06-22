@@ -1,0 +1,17 @@
+service: e-wallet-service
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-offline
+  - serverless-jest-plugin
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
